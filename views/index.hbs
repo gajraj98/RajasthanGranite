@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Rajasthan Granite</title>
+</head>
+
+<body>
+  {{>navbar data=details}}
+  {{>sliders data=sliders}}
+
+
+  {{!-- banner_section1 --}}
+
+  <section class="banner1_section py-1  text-center">
+    <a href="#services_section" class="btn btn-outline-primary">Start Exploring</a>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {{!-- services-section --}}
+
+    <section id="services_section" class="py-4">
+
+      <div class="container">
+     <h3 class="text-center">Our Services</h3>
+        <div class="row mt-3">
+          {{#each services}}
+          <div class="col-md-4">
+
+            <div class="card">
+
+              <div class="card-body" style="height: 250px;">
+                <div class="container text-center">
+                  <i class="fa-regular {{this.icon}} service_icon"></i>
+                </div>
+                <h3 class="card-title">{{this.title}}</h3>
+                <p>{{this.description}}</p>
+
+                <a href="{{this.link}}">{{this.linkText}}</a>
+                <a href="#">support</a>
+              </div>
+
+            </div>
+
+          </div>
+          {{/each}}
+        </div>
+
+      </div>
+
+    </section>
+
+
+    {{!-- banner2-section --}}
+
+    <section class="banner2_section py-4 background2">
+
+      <div class="container">
+        <h3 class="mb-5 text-secoundry">Why You Should Work With Us........</h3>
+        <div class="row">
+
+          <div class="col-md-4 text-center">
+
+            <div class="row">
+
+              <div class="col-md-3">
+                <img src="/static/images/customeFirst.jpg" style="height: 100px; width:90px" alt="">
+              </div>
+
+              <div class="col-md-9">
+                <h4>Customer Comes First</h4>
+                <p>We take pride in carefully real and planning guidance While exploring the goods, keeping your
+                  requirements
+                  in mind.</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-4 text-center">
+
+            <div class="row">
+
+              <div class="col-md-3">
+                <img src="/static/images/NoHidden.png" style="height: 100px; width:90px" alt="">
+              </div>
+
+              <div class="col-md-9">
+                <h4>No Hidden Price</h4>
+                <p>Without hidden cost involved, you can rest assured that The price you’re quoted is the price you’ll
+                  pay at
+                  checkout.</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-4 text-center">
+
+            <div class="row">
+
+              <div class="col-md-3">
+                <img src="/static/images/bigSaving.jpeg" style="height: 100px; width:90px" alt="">
+              </div>
+
+              <div class="col-md-9">
+                <h4>Bigger Savings</h4>
+                <p>Maintaining your budget in mind our staff will make sure you receive the best deal for your granite &
+                  chokhat buy with Rajasthan Granite India Gahdakhera.</p>
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="row mt-5">
+
+          <div class="col-md-4 text-center">
+
+            <div class="row">
+
+              <div class="col-md-3">
+                <img src="/static/images/sevenDay.jpeg" style="height: 100px; width:90px" alt="">
+              </div>
+
+              <div class="col-md-9">
+                <h4>7 Day turnaround</h4>
+                <p>Due to our onsite, fully stocked extensive collection of Numerous stone, we prepare the price and
+                  valuable information to our clients.
+
+
+                  in mind.</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-4 text-center">
+
+            <div class="row">
+
+              <div class="col-md-3">
+                <img src="/static/images/superiorQuality.jpeg" style="height: 100px; width:90px" alt="">
+              </div>
+
+              <div class="col-md-9">
+                <h4>Superior quality!</h4>
+                <p>Our team of professionals have decades of expertise in Custom blocks and slabs to maintain brand
+                  value and client satisfaction.</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-4 text-center">
+
+            <div class="row">
+
+              <div class="col-md-3">
+                <img src="/static/images/trusted.png" style="height: 100px; width:90px" alt="">
+              </div>
+
+              <div class="col-md-9">
+                <h4>Trusted Sources</h4>
+                <p>Our showroom carries the finest quality marble & Granite slabs from trusted vendors worldwide. We
+                  have strong standing with Our quarry partners equally.</p>
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+    {{!-- banner3_section --}}
+
+
+
+    {{!-- contact-us section --}}
+
+    <section id="contact_us_section" class="py-5 background1">
+
+      <div class="container">
+        <h3 class="text-center">Contact-Us</h3>
+        <div class="row">
+          <div class="col-md-12">
+
+            <form action="/process-contact-form" method="post">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+                  aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="contactNumber" class="form-label">Contact Number</label>
+                <input name="phone" type="number" class="form-control" id="contactNumber">
+              </div>
+              <div class="form-floating my-4">
+                <textarea name="query" style="height: 250px;" class="form-control" placeholder="Enter your query here"
+                  id="queryArea"></textarea>
+                <label for="queryArea">Query</label>
+              </div>
+
+              <div class="container text-center">
+                <button type="submit" class="btn btn-dark">Submit</button>
+              </div>
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    {{!-- about section --}}
+
+    <section id="about_section"  class=" py-4">
+      <div class="container">
+         <h5>About</h5>
+        <div class="row">
+          <div class="col-md-12">
+            <p>Welcome to Rajasthan Granite, a distinguished manufacturing company specializing in exquisite granite
+              slabs, chokhat (door frames), and mandire (temple structures). With a relentless commitment to quality and
+              craftsmanship, we take pride in transforming ordinary spaces into extraordinary realms of beauty and
+              sophistication.
+
+              Our journey is defined by a passion for excellence, blending the allure of nature's finest stone with the
+              precision of modern manufacturing techniques. Each granite slab is a testament to our unwavering pursuit
+              of perfection, meticulously sourced from the heart of Rajasthan's rich geological formations.</p>
+            <div style="display: flex; flex-direction: column;">
+              <h5 style="align-self: flex-start;">Contact Info:</h5>
+              <p style="margin: 0;">rajasthanGranite@gmail.com</p>
+              <p style="margin: 0;">Phone:9856284655</p>
+              <p style="margin: 0;">Gahdakhera, Jhunjhunu, Rajasthan</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+     
+     {{!-- footer --}}
+
+   <section class="footer py-5 background3">
+
+        <div class="container">
+
+            <div class="row">
+
+               <div class="col-md-12 text-center" style="color: white;">
+                    @2023 Copyright <span>Rajasthan Granite</span> 
+               </div>
+
+            </div>
+
+        </div>
+
+   </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
